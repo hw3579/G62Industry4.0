@@ -19,11 +19,11 @@ plot3(eePos_des_traj(:,1),eePos_des_traj(:,2),eePos_des_traj(:,3),'r--') %desire
 plot3(eePos_sim(:,1),eePos_sim(:,2),eePos_sim(:,3),'b') %actual path
 
 %%
-% Set up an object to display the robot trajectory at a fixed rate of 60 frames per second. 
+% Set up an object to display the robot trajectory at a fixed rate of 120 frames per second. 
 % Show the robot in each configuration from the inverse kinematic solver. 
 % Watch as the arm traces the circular trajectory shown.
 count = length(t_sim);
-framesPerSecond = 60; 
+framesPerSecond = 120; 
 r = rateControl(framesPerSecond);
 for i = 1:count
     show(robot,qs(i,:)','PreservePlot',false);
