@@ -116,7 +116,7 @@ show(robot)
 
 
 %% open model
-sim_model='FourlinkRobot_2019b';
+sim_model='FourlinkRobot';
 open(sim_model);
 
 
