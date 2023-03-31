@@ -145,12 +145,12 @@ traj_da = divide_points(pointd, pointa);
 %Combine these four matrices together to generate a 40*3 matrix of traj points
 eePos_des_traj=combine_matrices(traj_ab,traj_bc,traj_cd,traj_da);
 %Generate time sequences
-time_traj=[1:40]';
+time_traj=[1:48]';
 
 
 
 %% simulate model
-tsim=40; %simulation time
+tsim=50; %simulation time
 t_sample=0.01; %0.01 %simulation time step (sample time)
 sim(sim_model); %run the simulation of the model
 
